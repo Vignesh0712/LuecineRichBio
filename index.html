@@ -1,0 +1,320 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>
+            LuecineRichBio                
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <linK rel="icon" href="images/Login_Header_Center.png">
+        <!-- css -->        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- script -->        
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+                <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt="no image" ></a>
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                            <span class="mr-auto"></span>
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                CLINICS
+                                </a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    TECHNOLOGY
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                   R&amp;D
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                   CONTACT
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-toggle="modal" data-target="#login">                                    
+                                            LOG IN                                          
+                              </a>
+                            </li>    
+                          </ul>
+                        </div>  
+                      </nav>
+                    </div>
+        </header>
+
+
+
+        <!-- login Modal starts -->
+  <div class="modal" id="login">
+        <div class="modal-dialog">
+          <div class="modal-content">          
+            
+            <div class="modal-header">              
+              <button type="button" class="close" data-dismiss="modal"><img src="images/Close.png"></button>
+            </div>
+                        
+            <div class="modal-body">
+             <img id="modellogo" src="images/Login_Header_Center.png" alt="no image">
+             <form>
+                <div class="form-group">                 
+                  <input type="email" class="modelip em" id="em" name="username" placeholder="Email id">
+                </div>
+                <div class="form-group">                  
+                  <input type="password" class="modelip pwd" id="pwd" name="password" placeholder="Password">
+                  <a id="fp" href="#" data-toggle="modal" data-target="#signup">Forgot Password?</a>
+                </div>
+                <div class="modelgr">
+                    <button type="submit" class="btn" id="modelbtn">LOG IN</button>
+                    <br/>
+                    <a id="cna" href="#" class="close cna" data-dismiss="modal" data-toggle="modal" data-target="#signup">Create an Account</a>
+                </div>                
+              </form>
+            </div>           
+            
+            
+          </div>
+        </div>
+      </div>
+      <!-- login model ends -->
+
+
+      <!-- signup model starts -->
+
+      <div class="modal" id="signup">
+            <div class="modal-dialog">
+              <div class="modal-content">          
+                
+                <div class="modal-header">              
+                  <button type="button" class="close" data-dismiss="modal"><img src="images/Close.png"></button>
+                </div>
+                            
+                <div class="modal-body">
+                 <img id="modellogo" src="images/Login_Header_Center.png" alt="no image">
+                 <form>
+                    <div class="form-group">                 
+                        <input type="text" class="modelip nm" id="nm" name="username" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">                 
+                      <input type="email" class="modelip em" id="em" name="username" placeholder="Email id">
+                    </div>
+                    <div class="form-group">                  
+                      <input type="password" class="modelip pwd" id="pwd" name="password" placeholder="Password">
+                    </div>
+                    <div id="modelgr">
+                        <button type="submit" class="btn" id="modelbtn">SIGN UP</button>
+                        <br/>
+                        <a id="cna" href="#" class="close" data-dismiss="modal" data-toggle="modal" data-target="#login">Already have a Account! <span id="lgn">LOG IN</span></a>
+                    </div>
+                    
+                  </form>
+                </div>
+                              
+                
+              </div>
+            </div>
+          </div>
+
+      <!-- signup model ends -->
+
+    <section id="part2"></section> 
+    
+    
+    <section id="part3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg" src="images/img1.png" alt="no image">
+                        <p class="para">PROPRIETARY ANALYSIS PLATFORM</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg"src="images/img2.png" alt="no image">
+                        <p class="para">ENCRYPTED DATA PRIVACY</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg"src="images/img3.png" alt="no image">
+                        <p class="para">QUICK TURN AROUND TIME</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg" src="images/img4.png" alt="no image">
+                        <p class="para" id="para">BIOLOGIST FRIENDLY <br/>INTERPRETATION REPORT</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg" src="images/img5.png" alt="no image">
+                        <p class="para">AFFORDABLE PRICING</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="fontimg" src="images/img6.png" alt="no image">
+                        <p class="para">CUSTOMIZED SERVICE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+            
+        
+    <section id="part4">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-sm-12">
+                   <div class="info">
+                        <img src="images/banner2.jpg" alt="no image">
+                        <h4>RESEARCH</h4>
+                        <hr>
+                        <p>Research is genomics has taken a new turn with the advent of Next Generation Sequencing Technology.</p>
+                   </div>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                    <div class="info">
+                        <img src="images/banner3.jpg" alt="no image">
+                        <h4>TECHNOLOGY</h4>
+                        <hr>
+                        <p>AGIS's report would include Physician Tailored Summaries as well as Detailed Analysis.</p>
+                    </div>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                    <div class="info">
+                        <img src="images/banner4.jpg" alt="no image">
+                        <h4>R&amp;D</h4>
+                        <hr>
+                        <p>We leverage deep understaning of disease biology annd bioimfomatics to embark upon novel in-house solutions to durg discovery.</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="ft">
+                        <h6>CONTACT DETAILS</h6> 
+                        <hr>                    
+                        <p>Are you generating lots of data? Interested in our subscription model? To get more imformation contact below.</p>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i><span>283, 3rd Floor, M.K.Puttalingaiah Road, <span id="sp2">Padmanabhanagar, Bangalore-560 070, India.</span></span></li>
+                            <li><i class="fa fa-phone"></i><span>+91-80-4370 1572</span></li>
+                            <li><i class="fa fa-envelope"></i><span><a id="ft1a" href="#">info@leucinerichbio.com</a></span></li>
+                        </ul>                       
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="ft">
+                        <h6>WHAT WE DO</h6> 
+                        <hr>               
+                        <ul>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">CLINICS</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">RESEARCH</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">TECHNOLOGY</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">R&amp;D</a></span></li>
+                        </ul>                       
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="ft">
+                        <h6>MORE LINKS</h6> 
+                        <hr>               
+                        <ul>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">Get in Touch</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">Clinic Services</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">Research Services</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">AGIS</a></span></li>
+                            <li><i class="fa fa-long-arrow-right"></i><span><a href="#">HGVD</a></span></li>
+                        </ul>                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12"></div>
+            </div>
+            </div>
+
+
+            <div id="footer2">
+                <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="ft2">
+                        <p><span>&copy;2017</span> Luecine Rich Bio Pvt Ltd. <span>All rights reserved</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="ft2" id="ft2">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12"></div>
+                <div class="col-md-2 col-sm-12"></div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
